@@ -31,7 +31,8 @@ jobs:
         if: always()
         shell: bash
         run: |
-          find .
+          pwd
+          find ..
           ./zephyr-sdk-x86_64-hosttools-standalone-0.10.sh -y -d .
 
       - name: Build firmware
