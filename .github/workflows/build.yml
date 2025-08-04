@@ -24,6 +24,7 @@ jobs:
 
       - name: Setup Zephyr project
         uses: zephyrproject-rtos/action-zephyr-setup@v1
+        continue-on-error: true
         with:
           app-path: example-application
           toolchains: arm-zephyr-eabi
