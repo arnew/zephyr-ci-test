@@ -27,6 +27,12 @@ jobs:
         with:
           app-path: example-application
           toolchains: arm-zephyr-eabi
+      - name: try installing hosttools anyways
+        if: always()
+        shell: bash
+        run: |
+          find .
+          ./zephyr-sdk-x86_64-hosttools-standalone-0.10.sh -y -d .
 
       - name: Build firmware
         working-directory: example-application
