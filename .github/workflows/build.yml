@@ -33,7 +33,7 @@ jobs:
         shell: bash
         run: |
           pwd
-          find ..
+          #find ..
           ../zephyr-ci-test/zephyr-sdk/zephyr-sdk-x86_64-hosttools-standalone-0.10.sh -y -d .
 
       - name: Build firmware
