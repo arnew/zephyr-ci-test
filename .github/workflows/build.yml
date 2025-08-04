@@ -34,7 +34,7 @@ jobs:
         run: |
           pwd
           find ..
-          ./zephyr-sdk-x86_64-hosttools-standalone-0.10.sh -y -d .
+          ../zephyr-ci-test/zephyr-sdk/zephyr-sdk-x86_64-hosttools-standalone-0.10.sh -y -d .
 
       - name: Build firmware
         working-directory: example-application
